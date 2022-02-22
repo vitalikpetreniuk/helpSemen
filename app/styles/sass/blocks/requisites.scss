@@ -1,0 +1,68 @@
+.requisites {
+	padding: 50px 0;
+	background: #F5F5F5;
+	margin: 132px 0 144px 0;
+	@include media-max(767) {
+		padding: 20px 0;
+		margin: 66px 0 66px 0;
+	}
+	.main-title {
+		margin-bottom: 86px;
+		@include media-max(767) {
+			margin-bottom: 15px;
+		}
+	}
+	&__card {
+		margin-bottom: 30px;
+		min-height: 411px;
+		min-width: 429px;
+		padding: 70px 45px;
+		background: linear-gradient(121.76deg, #E1E1E1 19.7%, rgba(227, 227, 227, 0) 83.16%);
+		border-radius: 10px;
+		@include media-max(991) {
+			min-width: auto;
+		}
+		@include media-max(767) {
+			text-align: center;
+		}
+		@include media-max(575) {
+			padding: 35px 35px;
+			min-height: auto;
+		}
+		& > span {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 150%;
+			color: #565656;
+			display: inline-block;
+			margin-top: 42px;
+			margin-bottom: 20px;
+			@include media-max(575) {
+				font-size: 14px;
+				margin-top: 30px;
+			}
+		}
+		&-icon {
+			min-height: 62px;
+			img {
+				@include media-max(767) {
+					max-width: 214px;
+					width: 100%;
+				}
+			}
+		}
+		&-numbers {
+			display: flex;
+			flex-direction: column;
+			span {
+				font-weight: 600;
+				font-size: 30px;
+				line-height: 150%;
+				color: #2F2D2D;
+				@include media-max(575) {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

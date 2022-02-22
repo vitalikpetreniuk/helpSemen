@@ -1,0 +1,42 @@
+.footer {
+	background: url("../images/dist/footer.jpg");
+	background-size: cover;
+	padding: 160px 0 230px;
+	&__logo {
+		img {
+			@include media-max(575) {
+				max-width: 77px;
+			}
+		}
+	}
+	&__socials {
+		margin: 80px 0 63px;
+		li {
+			transition: .4s;
+			&:not(:last-of-type) {
+				margin-right: 60px;
+			}
+			&:hover {
+				opacity: .5;
+			}
+		}
+		@include media-max(767) {
+			margin: 60px 0 60px;
+		}
+	}
+	&__copywrite {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 0%;
+		text-transform: uppercase;
+		@include media-max(575) {
+			font-size: 14px;
+		}
+	}
+	@include media-max(991) {
+		padding: 100px 0 140px;
+	}
+	@include media-max(375) {
+		background: url("../images/dist/footer-mob.jpg") no-repeat;
+	}
+}

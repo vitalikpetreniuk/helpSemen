@@ -1,0 +1,16 @@
+.docs {
+	&__papers {
+		margin: 92px 0 198px 0 !important;
+		@include media-max(767) {
+			margin: 50px 0 80px!important;
+		}
+	}
+	&__operation {
+		margin: 0 auto;
+		max-width: 1095px;
+		img	{
+			max-width: 540px;
+			width: 100%;
+		}
+	}
+}

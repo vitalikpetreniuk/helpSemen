@@ -1,0 +1,23 @@
+.bio {
+	background: linear-gradient(170.21deg, #F4F4F4 57.27%, rgba(235, 235, 235, 0) 99.57%);
+	border-radius: 10px;
+	padding: 64px 30px;
+	p {
+		color: #565656;
+		&:not(:last-of-type) {
+			margin-bottom: 30px;
+			@include media-max(767) {
+				margin-bottom: 20px;
+			}
+		}
+		strong {
+			font-weight: 600;
+		}
+		@include media-max(767) {
+			font-size: 14px;
+		}
+	}
+	@include media-max(767) {
+		padding: 47px 15px;
+	}
+}

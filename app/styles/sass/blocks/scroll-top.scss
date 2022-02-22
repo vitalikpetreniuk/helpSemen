@@ -1,0 +1,30 @@
+.scroll-top {
+	position: fixed;
+	bottom: 40px;
+	right: 98px;
+	transform: rotate(-180deg);
+	display: inline-block;
+	cursor: pointer;
+	transition: .2s linear;
+	opacity: 0;
+	visibility: hidden;
+	&.show {
+		opacity: 1;
+		visibility: visible;
+	}
+	&:hover {
+		opacity: .6;
+	}
+	img {
+		display: inline-block;
+		width: 82px;
+		height: 79px;
+		@include media-max(767) {
+			width: 42px;
+			height: 40px;
+		}
+	}
+	@include media-max(767) {
+		right: 30px;
+	}
+}
