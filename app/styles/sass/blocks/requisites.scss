@@ -45,6 +45,7 @@
 		&-icon {
 			min-height: 62px;
 			img {
+				max-width: 281px;
 				@include media-max(767) {
 					max-width: 214px;
 					width: 100%;
