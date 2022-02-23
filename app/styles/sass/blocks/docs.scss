@@ -8,7 +8,17 @@
 	&__operation {
 		margin: 0 auto;
 		max-width: 1095px;
-		img	{
+		@include media-max(1399) {
+			transform: translate(8px, 0px);
+		}
+		.slick-slide {
+			&:not(:last-of-type) {
+				@include media-max(1399) {
+					padding-right: 10px;
+				}
+			}
+		}
+		img {
 			max-width: 540px;
 			width: 100%;
 		}
