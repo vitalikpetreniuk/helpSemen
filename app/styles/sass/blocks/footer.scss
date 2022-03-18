@@ -1,7 +1,7 @@
 .footer {
 	background: url("../images/dist/footer.jpg");
 	background-size: cover;
-	padding: 160px 0 230px;
+	padding: 100px 0 100px;
 	&__logo {
 		img {
 			@include media-max(575) {

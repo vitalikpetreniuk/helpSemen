@@ -58,4 +58,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		// centerPadding: '15px',
 	})
 
+	function copytext(el) {
+		var $tmp = $("<textarea>");
+		$("body").append($tmp);
+		$tmp.val($(el).text()).select();
+		document.execCommand("copy");
+		$tmp.remove();
+		console.log(el)
+	}
+	
+	$('.requisites__card-numbers span').on('click', function () {
+		copytext($(this))
+		$(this).parent().next().toggleClass('show')
+	})
+
 })

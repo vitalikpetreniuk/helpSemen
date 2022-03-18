@@ -1,10 +1,7 @@
 .thanks {
 	background: linear-gradient(170.21deg, #F4F4F4 27.76%, rgba(235, 235, 235, 0) 80.05%);
 	margin: 160px 0 0 0;
-	padding: 100px 0 200px;
-	@include media-max(1199) {
-		padding: 100px 0 100px;
-	}
+	padding: 100px 0 100px;
 	@include media-max(767) {
 		padding: 50px 0 50px;
 		margin: 103px 0 0 0;
